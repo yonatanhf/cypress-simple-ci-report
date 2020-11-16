@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wkrzywiec/cypress-simple-ci-report.git"
+    "url": "git+https://github.com/wkrzywiec/cypress-simple-ci-report.git"
   },
   "author": "Wojtek Krzywiec",
   "license": "ISC",
