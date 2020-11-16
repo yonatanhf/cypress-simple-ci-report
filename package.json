@@ -9,6 +9,8 @@
   },
   "devDependencies": {
     "@dhis2/cli-app-scripts": "^5.4.2",
+    "@dhis2/cli-utils-cypress": "^3.1.1",
+    "@dhis2/cypress-commands": "^3.1.1",
     "cypress-multi-reporters": "^1.4.0",
     "mocha": "^8.0.1",
     "mochawesome": "^6.1.1",
