@@ -15,6 +15,11 @@ jobs:
     container: cypress/browsers:node12.16.2-chrome81-ff75
     steps:
       - uses: actions/checkout@v2
+      - name: Cypress run
+        uses: cypress-io/github-action@v1
+        with:
+          start: npm start
+          wait-on: http://localhost:3000
       
       - name: Install a project with a clean slate
         run: |
@@ -26,11 +31,6 @@ jobs:
       - name: Run Cypress tests
         run: npm run test:chrome
         continue-on-error: true
-      
-      - name: Copy test execution videos
-        run: |
-          mkdir public
-          cp -r cypress/videos public/videos
       
       - name: Merge test results into one
         run: npm run report:merge
