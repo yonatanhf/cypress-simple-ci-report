@@ -4,3 +4,8 @@ node_modules
 *.png
 index.json
 /cypress/results
+
+# DHIS2 Platform
+.d2
+src/locales
+build
