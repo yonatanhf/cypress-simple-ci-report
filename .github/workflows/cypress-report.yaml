@@ -15,9 +15,10 @@ jobs:
         with:
           node-version: '12'
       - run: |
-          npm install --global @dhis2/cli
+          npm install @dhis2/cli
+          
       - name: Cypress run
-        uses: cypress-io/github-action@v1
+        uses: cypress-io/github-action@v2
         with:
           start: npm start
           wait-on: 'http://localhost:3000'
