@@ -3,9 +3,6 @@ on:
   push:
     branches:
       - 'master'
-  # Add this part if you want to schedule test rerun
-  # schedule:
-  #   - cron: '0 8 1-31 * *'
 
 jobs:
   
@@ -15,11 +12,9 @@ jobs:
     container: cypress/browsers:node12.16.2-chrome81-ff75
     steps:
       - uses: actions/checkout@v2
-      - name: Cypress run
-        uses: cypress-io/github-action@v1
         with:
-          start: npm start
-          wait-on: http://localhost:3000
+           start: npm start
+           wait-on: 'http://localhost:3000'
       
       - name: Install a project with a clean slate
         run: |
