@@ -17,13 +17,8 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v1
         with:
-          build: yarn setup
-          start: yarn start
-          # quote the url to be safe against YML parsing surprises
+          start: npm run start
           wait-on: 'http://localhost:3000'
-          # the entire command will automatically be prefixed with "npx"
-          command-prefix: 'percy exec -- npx'
-      
       
       - name: Run Cypress tests
         run: npm run test:chrome
