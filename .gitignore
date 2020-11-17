@@ -4,7 +4,7 @@ node_modules
 *.png
 index.json
 /cypress/results
-/cypress/reports
+/cypress/reports/mochareports/assets
 
 # DHIS2 Platform
 .d2

@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2020-11-17T11:05:52.452Z",
-    "end": "2020-11-17T11:05:54.924Z",
-    "duration": 2472,
+    "start": "2020-11-17T13:56:33.189Z",
+    "end": "2020-11-17T13:56:35.553Z",
+    "duration": 2364,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e5e1ec73-6b1e-49c1-a52c-8898c7cb078b",
+      "uuid": "2fc18fc7-9fa9-4c04-ac11-bc1c267a338d",
       "title": "",
       "fullFile": "cypress/integration/level1.spec.js",
       "file": "cypress/integration/level1.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "05ba58bb-fee8-4bf4-8ae8-d21c61a2f96d",
+          "uuid": "550ee62e-28ca-424f-9f5a-de9c64604e77",
           "title": "Level-1 challenge",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Shows DHIS2 login",
               "fullTitle": "Level-1 challenge Shows DHIS2 login",
               "timedOut": null,
-              "duration": 997,
+              "duration": 785,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "console.log('login screen');\ncy.get(\"[data-test='dhis2-uicore-card']\").should('be.visible');",
               "err": {},
-              "uuid": "f017fc62-ca17-4d4b-89e8-851c21a44fd5",
-              "parentUUID": "05ba58bb-fee8-4bf4-8ae8-d21c61a2f96d",
+              "uuid": "ccc20e43-53d4-4acf-8974-132e11fd3ae7",
+              "parentUUID": "550ee62e-28ca-424f-9f5a-de9c64604e77",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Shows  DHIS2 header bar",
               "fullTitle": "Level-1 challenge Shows  DHIS2 header bar",
               "timedOut": null,
-              "duration": 1291,
+              "duration": 1395,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "var dhis_Instance = 'http://localhost:9999';\nvar username = 'admin';\nvar password = 'district';\ncy.get('input[name=\"server\"').type(dhis_Instance);\ncy.get('input[name=\"j_username\"]').type(username);\ncy.get('input[name=\"j_password\"]').type(password);\ncy.get(\"[data-test='dhis2-adapter-loginsubmit']\").click();",
               "err": {},
-              "uuid": "39d0c67e-e158-41b5-8f73-d507125069e5",
-              "parentUUID": "05ba58bb-fee8-4bf4-8ae8-d21c61a2f96d",
+              "uuid": "35b7a8f8-7255-44a8-87cb-e9aec3154789",
+              "parentUUID": "550ee62e-28ca-424f-9f5a-de9c64604e77",
               "isHook": false,
               "skipped": false
             },
@@ -83,22 +83,22 @@
               "context": null,
               "code": "console.log('hello world');",
               "err": {},
-              "uuid": "3cc3ce67-da7f-4e6e-b987-5d9fa85bdad2",
-              "parentUUID": "05ba58bb-fee8-4bf4-8ae8-d21c61a2f96d",
+              "uuid": "6c10a4b9-794b-495b-8954-df5ddfbcb878",
+              "parentUUID": "550ee62e-28ca-424f-9f5a-de9c64604e77",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f017fc62-ca17-4d4b-89e8-851c21a44fd5",
-            "39d0c67e-e158-41b5-8f73-d507125069e5",
-            "3cc3ce67-da7f-4e6e-b987-5d9fa85bdad2"
+            "ccc20e43-53d4-4acf-8974-132e11fd3ae7",
+            "35b7a8f8-7255-44a8-87cb-e9aec3154789",
+            "6c10a4b9-794b-495b-8954-df5ddfbcb878"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2449,
+          "duration": 2341,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
