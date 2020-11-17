@@ -3,5 +3,16 @@
     "video": false,
     "projectId": "testingrabbit",
     "integrationFolder": "./cypress/integration/",
-    "testFiles": "**.spec.js"
+    "testFiles": "**.spec.js",
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/reports/mocha",
+            "quite": true,
+            "overwrite": false,
+            "html": false,
+            "json": true
+        }
+    }
 }
