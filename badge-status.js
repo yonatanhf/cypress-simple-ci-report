@@ -7,7 +7,12 @@ let reportData = {};
 try{
     data = fs.readFileSync(report);
     reportData = JSON.parse(data);
-    console.log(reportData.stats.tests === reportData.stats.passes);
+    if(reportData.stats.tests === reportData.stats.passes)
+            console.log('Completed');
+    else if(reportData.stats.passes === 0)
+            console.log('Not-Completed');
+    else
+            console.log('Partially-completed');
 } catch(err){
     console.log(false);
 }
