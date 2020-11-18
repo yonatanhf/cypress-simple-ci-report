@@ -14,5 +14,5 @@ try{
     else
             console.log('Partially-completed');
 } catch(err){
-    console.log(false);
+    console.log('Not tested, retry');
 }
