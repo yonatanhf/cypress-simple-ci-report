@@ -14,29 +14,7 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-version: "12"
-      - run: |
-          npm install @dhis2/cli
-
-      - name: Cypress run
-        uses: cypress-io/github-action@v2
-        with:
-          start: npm start
-          wait-on: "http://localhost:3000"
-
-      - name: Run tests
-        run: npm run test:chrome
-        continue-on-error: true
-
-      - name: Merge test results
-        run: npm run report:merge
-
-      - name: Generate HTML report
-        run: npm run report:generate
-
-      - name: Deploy report page
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          user_name: "github-actions[bot]"
-          user_email: "github-actions[bot]@users.noreply.github.com"
+      - name: Level-1 DHIS2 client application
+        run: |
+          echo 'Started level-1 analysis'
+          echo "level1Status='{"label":"DHIS2-level1", "status": $(node badge-status.js)}'"
