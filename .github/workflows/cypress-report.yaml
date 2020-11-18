@@ -17,5 +17,4 @@ jobs:
       - name: Level-1 DHIS2 client application
         run: |
           echo 'Started level-1 analysis'
-          echo "level1Status='{"label": "DHIS2-level1", "status": "pass"}'" >> $GITHUB_ENV
-          echo $(npm run badge-status)
+          echo "level1Status='{"label":"DHIS2-level1", "status": $(node badge-status.js)}'"
